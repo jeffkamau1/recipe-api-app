@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core',
     'rest_framework',
-    'drf_spectacular'
+    'drf_spectacular',
+    'user',
 ]
 
 MIDDLEWARE = [
@@ -136,6 +137,8 @@ AUTH_USER_MODEL = 'core.User'
 X_FRAME_OPTIONS = "SAMEORIGIN"
 SILENCED_SYSTEM_CHECKS = ["security.W019"]
 
+# kindly use _ and not -
 REST_FRAMEWORK = {
-    'DEFAULT_SCHEMA_CLASS': 'drf-spectacular.openapi.Autoschema',
+    # YOUR SETTINGS
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
