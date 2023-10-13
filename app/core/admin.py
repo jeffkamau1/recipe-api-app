@@ -46,5 +46,6 @@ class UserAdmin(BaseUserAdmin):
 
 
 admin.site.register(models.User, UserAdmin)
+admin.site.register(models.Recipe)
 admin.site.site_header = "Recipe App admin"
 admin.site.site_title = "Recipe App admin"
